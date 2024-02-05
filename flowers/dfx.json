@@ -1,0 +1,25 @@
+{
+  "canisters": {
+    "flowers_backend": {
+      "main": "src/flowers_backend/main.mo",
+      "type": "motoko"
+    },
+    "flowers_frontend": {
+      "dependencies": [
+        "flowers_backend"
+      ],
+      "source": [
+        "src/flowers_frontend/assets"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
